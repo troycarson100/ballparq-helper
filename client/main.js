@@ -8,9 +8,14 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 
   $stateProvider
     .state('home', {
-    url: '/',
-    templateUrl: 'templates/home.html'
-  })
+      url: '/',
+      templateUrl: 'templates/home.html'
+    })
+    .state('financial', {
+      url: '/financial',
+      templateUrl: 'templates/financial.html',
+      controller: 'financeController as fc'
+    })
 })
 
 
